@@ -151,23 +151,3 @@ class API {
         return decodedData
     }
 }
-
-class AccountsAPI: API {
-    override var baseURL: String {
-        return "62812cd71020d85205865f3c.mockapi.io"
-    }
-
-    private let getAccounts = Endpoint<[Account]>(path: "accounts",
-                                                                  method: .get,
-                                                                  authenticated: false,
-                                                                  queryItems: [])
-    func getExchangeRates() async throws -> [Account] {
-        let request = try makeRequest(for: getAccounts, data: nil)
-        return try await send(request: request)
-    }
-}
-
-struct Account: Decodable {
-    let id: String
-    let amount: Decimal
-}

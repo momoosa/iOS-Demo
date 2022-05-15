@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		CD64011D28316D9600B2EA5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64011C28316D9600B2EA5F /* AppDelegate.swift */; };
 		CD64011F28316D9600B2EA5F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64011E28316D9600B2EA5F /* SceneDelegate.swift */; };
-		CD64012128316D9600B2EA5F /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64012028316D9600B2EA5F /* AccountsViewController.swift */; };
+		CD64012128316D9600B2EA5F /* AccountListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64012028316D9600B2EA5F /* AccountListViewController.swift */; };
 		CD64012628316D9700B2EA5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD64012528316D9700B2EA5F /* Assets.xcassets */; };
 		CD64012928316D9700B2EA5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD64012728316D9700B2EA5F /* LaunchScreen.storyboard */; };
 		CD64013428316D9700B2EA5F /* iOS_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64013328316D9700B2EA5F /* iOS_DemoTests.swift */; };
@@ -30,6 +30,12 @@
 		CD64016F283174DD00B2EA5F /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64016E283174DD00B2EA5F /* Data+Extensions.swift */; };
 		CD6401712831757900B2EA5F /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6401702831757900B2EA5F /* UIViewController+Extensions.swift */; };
 		CD640173283175A000B2EA5F /* AccountDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD640172283175A000B2EA5F /* AccountDetailViewController.swift */; };
+		CD6401792831897400B2EA5F /* AccountListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6401782831897400B2EA5F /* AccountListViewModel.swift */; };
+		CD64017C283189C600B2EA5F /* AccountListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64017B283189C600B2EA5F /* AccountListAPI.swift */; };
+		CD64017F283189E300B2EA5F /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64017E283189E300B2EA5F /* Account.swift */; };
+		CD64018128318A2E00B2EA5F /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64018028318A2E00B2EA5F /* AccountViewModel.swift */; };
+		CD64018428318E9F00B2EA5F /* UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64018328318E9F00B2EA5F /* UICollectionViewCell.swift */; };
+		CD64018628318EC900B2EA5F /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64018528318EC900B2EA5F /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +59,7 @@
 		CD64011928316D9600B2EA5F /* iOS Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD64011C28316D9600B2EA5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD64011E28316D9600B2EA5F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CD64012028316D9600B2EA5F /* AccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
+		CD64012028316D9600B2EA5F /* AccountListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListViewController.swift; sourceTree = "<group>"; };
 		CD64012528316D9700B2EA5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD64012828316D9700B2EA5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD64012A28316D9700B2EA5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +82,12 @@
 		CD64016E283174DD00B2EA5F /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
 		CD6401702831757900B2EA5F /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		CD640172283175A000B2EA5F /* AccountDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailViewController.swift; sourceTree = "<group>"; };
+		CD6401782831897400B2EA5F /* AccountListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListViewModel.swift; sourceTree = "<group>"; };
+		CD64017B283189C600B2EA5F /* AccountListAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListAPI.swift; sourceTree = "<group>"; };
+		CD64017E283189E300B2EA5F /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		CD64018028318A2E00B2EA5F /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		CD64018328318E9F00B2EA5F /* UICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCell.swift; sourceTree = "<group>"; };
+		CD64018528318EC900B2EA5F /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +214,7 @@
 				CD64016E283174DD00B2EA5F /* Data+Extensions.swift */,
 				CD64016A2831706F00B2EA5F /* URLSession+Compatibility.swift */,
 				CD64016C2831732000B2EA5F /* URLRequest+cURL.swift */,
+				CD64018528318EC900B2EA5F /* UIView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -209,8 +222,12 @@
 		CD640174283175AC00B2EA5F /* Account Screen */ = {
 			isa = PBXGroup;
 			children = (
+				CD64017D283189DB00B2EA5F /* Model */,
+				CD64017A283189BF00B2EA5F /* API */,
+				CD6401772831896A00B2EA5F /* ViewModel */,
 				CD640176283175BD00B2EA5F /* FlowController */,
 				CD640175283175B500B2EA5F /* ViewController */,
+				CD64018228318E9000B2EA5F /* View */,
 			);
 			path = "Account Screen";
 			sourceTree = "<group>";
@@ -218,7 +235,7 @@
 		CD640175283175B500B2EA5F /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				CD64012028316D9600B2EA5F /* AccountsViewController.swift */,
+				CD64012028316D9600B2EA5F /* AccountListViewController.swift */,
 				CD640172283175A000B2EA5F /* AccountDetailViewController.swift */,
 			);
 			path = ViewController;
@@ -230,6 +247,39 @@
 				CD64014C28316DE000B2EA5F /* AccountsFlowController.swift */,
 			);
 			path = FlowController;
+			sourceTree = "<group>";
+		};
+		CD6401772831896A00B2EA5F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CD6401782831897400B2EA5F /* AccountListViewModel.swift */,
+				CD64018028318A2E00B2EA5F /* AccountViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CD64017A283189BF00B2EA5F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CD64017B283189C600B2EA5F /* AccountListAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		CD64017D283189DB00B2EA5F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD64017E283189E300B2EA5F /* Account.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD64018228318E9000B2EA5F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD64018328318E9F00B2EA5F /* UICollectionViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,14 +419,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD64015928316F1300B2EA5F /* Endpoint.swift in Sources */,
+				CD64018128318A2E00B2EA5F /* AccountViewModel.swift in Sources */,
 				CD640173283175A000B2EA5F /* AccountDetailViewController.swift in Sources */,
-				CD64012128316D9600B2EA5F /* AccountsViewController.swift in Sources */,
+				CD64017C283189C600B2EA5F /* AccountListAPI.swift in Sources */,
+				CD64012128316D9600B2EA5F /* AccountListViewController.swift in Sources */,
 				CD64016D2831732000B2EA5F /* URLRequest+cURL.swift in Sources */,
+				CD64018428318E9F00B2EA5F /* UICollectionViewCell.swift in Sources */,
+				CD64017F283189E300B2EA5F /* Account.swift in Sources */,
 				CD64016B2831706F00B2EA5F /* URLSession+Compatibility.swift in Sources */,
 				CD64015F28316F6900B2EA5F /* SessionManager.swift in Sources */,
 				CD64011D28316D9600B2EA5F /* AppDelegate.swift in Sources */,
 				CD6401692831704700B2EA5F /* String+Extensions.swift in Sources */,
 				CD64011F28316D9600B2EA5F /* SceneDelegate.swift in Sources */,
+				CD64018628318EC900B2EA5F /* UIView+Extensions.swift in Sources */,
 				CD64015C28316F3200B2EA5F /* Session.swift in Sources */,
 				CD64016F283174DD00B2EA5F /* Data+Extensions.swift in Sources */,
 				CD64014D28316DE000B2EA5F /* AccountsFlowController.swift in Sources */,
@@ -384,6 +439,7 @@
 				CD6401712831757900B2EA5F /* UIViewController+Extensions.swift in Sources */,
 				CD64016128316FA300B2EA5F /* User.swift in Sources */,
 				CD64016328316FDE00B2EA5F /* KeychainProtocol.swift in Sources */,
+				CD6401792831897400B2EA5F /* AccountListViewModel.swift in Sources */,
 				CD64015028316E3300B2EA5F /* Transaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

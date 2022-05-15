@@ -1,5 +1,5 @@
 ////
-////  AccountsFlowController.swift
+////  AccountListFlowController.swift
 ////  iOS Demo
 ////
 ////  Created by Mo Moosa on 15/05/2022.
@@ -7,17 +7,18 @@
 //
 import UIKit
 //
-class AccountsFlowController: UIViewController {
+class AccountListFlowController: UIViewController {
     private let navigation = UINavigationController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         add(child: navigation)
-        showAccountsViewController()
+        showAccountListViewController()
     }
 
-    func showAccountsViewController() {
-         navigation.show(AccountsViewController(), sender: self)
+    func showAccountListViewController() {
+        let api = AccountListViewModel<Account>(api: AccountListAPI())
+    navigation.show(AccountListViewController(viewModel: api), sender: self)
     }
 
     func showAccountDetailViewController() {
