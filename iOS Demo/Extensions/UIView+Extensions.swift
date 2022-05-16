@@ -28,6 +28,13 @@ enum Edge: CaseIterable {
 }
 
 extension UIView {
+
+    class func autoLayout() -> Self {
+        let view = self.init(frame: .zero)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }
+
     func pinToSuperview(edges: [Edge] = Edge.allCases,
                         constant: CGFloat = 8,
                         priority: UILayoutPriority = UILayoutPriority.required) {

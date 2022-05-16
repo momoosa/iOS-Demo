@@ -36,6 +36,8 @@
 		CD64018128318A2E00B2EA5F /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64018028318A2E00B2EA5F /* AccountViewModel.swift */; };
 		CD64018428318E9F00B2EA5F /* AccountCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64018328318E9F00B2EA5F /* AccountCollectionViewCell.swift */; };
 		CD64018628318EC900B2EA5F /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64018528318EC900B2EA5F /* UIView+Extensions.swift */; };
+		CD64018928325F4600B2EA5F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64018828325F4600B2EA5F /* Constants.swift */; };
+		CD64018B2832E1AE00B2EA5F /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64018A2832E1AE00B2EA5F /* UIColor+Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,8 @@
 		CD64018328318E9F00B2EA5F /* AccountCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCollectionViewCell.swift; sourceTree = "<group>"; };
 		CD64018528318EC900B2EA5F /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		CD6401872832260000B2EA5F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CD64018828325F4600B2EA5F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CD64018A2832E1AE00B2EA5F /* UIColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,7 @@
 			children = (
 				CD64011C28316D9600B2EA5F /* AppDelegate.swift */,
 				CD64011E28316D9600B2EA5F /* SceneDelegate.swift */,
+				CD64018828325F4600B2EA5F /* Constants.swift */,
 				CD640174283175AC00B2EA5F /* Account Screen */,
 				CD6401672831703900B2EA5F /* Extensions */,
 				CD64015D28316F5F00B2EA5F /* SessionManager */,
@@ -217,6 +222,7 @@
 				CD64016A2831706F00B2EA5F /* URLSession+Compatibility.swift */,
 				CD64016C2831732000B2EA5F /* URLRequest+cURL.swift */,
 				CD64018528318EC900B2EA5F /* UIView+Extensions.swift */,
+				CD64018A2832E1AE00B2EA5F /* UIColor+Theme.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -440,9 +446,11 @@
 				CD64015228316E6600B2EA5F /* API.swift in Sources */,
 				CD6401712831757900B2EA5F /* UIViewController+Extensions.swift in Sources */,
 				CD64016128316FA300B2EA5F /* User.swift in Sources */,
+				CD64018B2832E1AE00B2EA5F /* UIColor+Theme.swift in Sources */,
 				CD64016328316FDE00B2EA5F /* KeychainProtocol.swift in Sources */,
 				CD6401792831897400B2EA5F /* AccountListViewModel.swift in Sources */,
 				CD64015028316E3300B2EA5F /* Transaction.swift in Sources */,
+				CD64018928325F4600B2EA5F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,15 +8,15 @@
 import UIKit
 
 class AccountCollectionViewCell: UICollectionViewCell {
-    private let stackview = UIStackView()
-    private let titleLabel = UILabel()
-    private let subtitleLabel = UILabel()
-    private let titleStackView = UIStackView()
-    private let amountLabel = UILabel()
+    private let stackview = UIStackView.autoLayout()
+    private let titleLabel = UILabel.autoLayout()
+    private let subtitleLabel = UILabel.autoLayout()
+    private let titleStackView = UIStackView.autoLayout()
+    private let amountLabel = UILabel.autoLayout()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-
+        backgroundColor = .systemBackground
         setupStackView()
         setupTitleStackView()
         setupTitleLabel()
@@ -33,29 +33,30 @@ class AccountCollectionViewCell: UICollectionViewCell {
 
     private func setupStackView() {
         addSubview(stackview)
-        stackview.translatesAutoresizingMaskIntoConstraints = false
+        stackview.spacing = Constants.padding
         stackview.pinToSuperview()
     }
 
     private func setupTitleStackView() {
         titleStackView.axis = .vertical
-        titleStackView.translatesAutoresizingMaskIntoConstraints = false
+        titleStackView.spacing = Constants.padding
         stackview.addArrangedSubview(titleStackView)
     }
 
     private func setupTitleLabel() {
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        titleLabel.font = UIFont.preferredFont(forTextStyle: .headline)
+        titleLabel.textColor = UIColor.accent
         titleStackView.addArrangedSubview(titleLabel)
     }
 
     private func setupSubtitleLabel() {
-        subtitleLabel.translatesAutoresizingMaskIntoConstraints = false
+        amountLabel.font = UIFont.preferredFont(forTextStyle: .caption1)
         titleStackView.addArrangedSubview(subtitleLabel)
     }
 
     private func setupAmountLabel() {
-        subtitleLabel.font = UIFont.preferredFont(forTextStyle: .caption1)
-        amountLabel.translatesAutoresizingMaskIntoConstraints = false
+        amountLabel.font = UIFont.preferredFont(forTextStyle: .headline)
+        amountLabel.textColor = UIColor.accent
         stackview.addArrangedSubview(amountLabel)
     }
 
@@ -77,8 +78,7 @@ class AccountCollectionViewCell: UICollectionViewCell {
 
 extension UIStackView {
     func addSpacer() {
-        let spacer = UIView()
-        spacer.translatesAutoresizingMaskIntoConstraints = false
+        let spacer = UIView.autoLayout()
         addArrangedSubview(spacer)
     }
 }
