@@ -9,9 +9,13 @@ import Foundation
 
 protocol AccountProtocol: Hashable {
     var id: String { get }
-    var amount: String { get } // TODO: Decode as int
+    var name: String { get }
+    var amount: Double { get } // TODO: Decode as in
+    var accountNumber: String { get } // TODO: Decode as in
 }
 struct Account: Decodable, AccountProtocol {
     let id: String
-    let amount: String
+    let name: String
+    let amount: Double
+    let accountNumber: String
 }

@@ -34,7 +34,7 @@
 		CD64017C283189C600B2EA5F /* AccountListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64017B283189C600B2EA5F /* AccountListAPI.swift */; };
 		CD64017F283189E300B2EA5F /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64017E283189E300B2EA5F /* Account.swift */; };
 		CD64018128318A2E00B2EA5F /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64018028318A2E00B2EA5F /* AccountViewModel.swift */; };
-		CD64018428318E9F00B2EA5F /* UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64018328318E9F00B2EA5F /* UICollectionViewCell.swift */; };
+		CD64018428318E9F00B2EA5F /* AccountCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64018328318E9F00B2EA5F /* AccountCollectionViewCell.swift */; };
 		CD64018628318EC900B2EA5F /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64018528318EC900B2EA5F /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
@@ -86,8 +86,9 @@
 		CD64017B283189C600B2EA5F /* AccountListAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListAPI.swift; sourceTree = "<group>"; };
 		CD64017E283189E300B2EA5F /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		CD64018028318A2E00B2EA5F /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
-		CD64018328318E9F00B2EA5F /* UICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCell.swift; sourceTree = "<group>"; };
+		CD64018328318E9F00B2EA5F /* AccountCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCollectionViewCell.swift; sourceTree = "<group>"; };
 		CD64018528318EC900B2EA5F /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		CD6401872832260000B2EA5F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +120,7 @@
 		CD64011028316D9600B2EA5F = {
 			isa = PBXGroup;
 			children = (
+				CD6401872832260000B2EA5F /* README.md */,
 				CD64011B28316D9600B2EA5F /* iOS Demo */,
 				CD64013228316D9700B2EA5F /* iOS DemoTests */,
 				CD64013C28316D9800B2EA5F /* iOS DemoUITests */,
@@ -277,7 +279,7 @@
 		CD64018228318E9000B2EA5F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CD64018328318E9F00B2EA5F /* UICollectionViewCell.swift */,
+				CD64018328318E9F00B2EA5F /* AccountCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -424,7 +426,7 @@
 				CD64017C283189C600B2EA5F /* AccountListAPI.swift in Sources */,
 				CD64012128316D9600B2EA5F /* AccountListViewController.swift in Sources */,
 				CD64016D2831732000B2EA5F /* URLRequest+cURL.swift in Sources */,
-				CD64018428318E9F00B2EA5F /* UICollectionViewCell.swift in Sources */,
+				CD64018428318E9F00B2EA5F /* AccountCollectionViewCell.swift in Sources */,
 				CD64017F283189E300B2EA5F /* Account.swift in Sources */,
 				CD64016B2831706F00B2EA5F /* URLSession+Compatibility.swift in Sources */,
 				CD64015F28316F6900B2EA5F /* SessionManager.swift in Sources */,

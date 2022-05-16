@@ -9,6 +9,18 @@ import Foundation
 
 class AccountViewModel<T: AccountProtocol>: Hashable {
 
+    var name: String {
+        return account.name
+    }
+    
+    var amount: String {
+        return account.amount.formatted(.currency(code: Locale.current.currencyCode ?? "USD"))
+    }
+
+    var number: String {
+        return account.accountNumber
+    }
+
     private var account: T
 
     init(account: T) {
